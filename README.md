@@ -95,4 +95,8 @@ Parametreler :
 'mutasyon_ihtimali': Her bir genin rastgele değişime uğrama olasılığı (0.05)
 'mutasyon_buyuklugu': Mutasyon gerçekleştiğinde gen değerinin ne kadar değişeceği (1)
 'secim_turu': 'Rank Temelli Seçim'
-'caprazlama_turu': 'Tek Noktalı Çaprazlama'
+'caprazlama_turu': 'Tek Noktalı Çaprazlama'    
+
+## Proje Sonuçları
+Algoritma çalıştırıldığında elde edilen performans artış grafiği aşağıdadır. Nesiller ilerledikçe en iyi bireyin fitness değeri artmaktadır.
+Genetik Algoritma Sonuç Grafiği -> ('sonuc_grafigi.png')
