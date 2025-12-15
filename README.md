@@ -86,7 +86,7 @@ Algoritma Adımları:
 - Seçim (rank temelli), çaprazlama (tek noktalı) ve mutasyon işlemleri uygulanır.
 - Elde edilen en iyi skorlar kaydedilir ve grafik üzerinde gösterilir.
 
-** Parametreler :
+Parametreler :
 'pop_buyuklugu': Popülasyondaki birey sayısı (20)
 'nesil_sayisi':toplam döngü sayısı (50)
 'mutasyon_ihtimali': Her bir genin rastgele değişime uğrama olasılığı (0.05)
