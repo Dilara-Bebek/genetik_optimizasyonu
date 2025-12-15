@@ -34,12 +34,15 @@ Ceza katsayısı yüksek seçilmiştir. Bunun nedeni, kısıtları ihlal eden ç
 
 ## DOSYA YAPISI
 
-| Dosya Adı              | Açıklama                                                                                            |
-|------------------------|-----------------------------------------------------------------------------------------------------|
-| `genetik_operators.py` | Amaç fonksiyonu, kısıtlar ve seçim, çaprazlama, mutasyon gibi işlemlerin tanımlandığı dosyadır.     |
-| `evrim_motoru.py`      | Genetik algoritmanın ana çalışma döngüsünün kurulduğu ve nesillerin oluşturulduğu dosyadır.         |
-| `main.py`              | Algoritmanın çalıştırıldığı, parametrelerin belirlendiği ve sonuç grafiğinin çizildiği ana dosyadır.|
-| `README.md`            | Projenin amacı, yöntemi ve kullanım adımlarının açıklandığı dokümantasyon dosyasıdır.               |
+| Dosya Adı                     | Açıklama                                                                                                        |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| `genetik_optimizasyonu.ipynb` | Projenin Ana Dosyasısır. Google Colab üzerinde çalıştırılabilir, tüm kodları ve anlatımı içeren not defteridir. |
+| `genetik_operators.py`        | Amaç fonksiyonu, kısıtlar ve seçim, çaprazlama, mutasyon gibi işlemlerin tanımlandığı dosyadır.                 |
+| `evrim_motoru.py`             | Genetik algoritmanın ana çalışma döngüsünün kurulduğu ve nesillerin oluşturulduğu dosyadır.                     |
+| `main.py`                     | Algoritmanın çalıştırıldığı, parametrelerin belirlendiği ve sonuç grafiğinin çizildiği ana dosyadır.            |
+| `README.md`                   | Projenin amacı, yöntemi ve kullanım adımlarının açıklandığı dokümantasyon dosyasıdır.                           |
+| 'sonuc_grafigi.png'           | Algoritma çalıştırıldığında elde edilen performans artış grafiğidir.                                            |
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
