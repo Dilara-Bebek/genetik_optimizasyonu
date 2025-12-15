@@ -8,9 +8,9 @@ Amaç, verilen kısıtlar altında en yüksek performans skorunu sağlayan donan
 ## AMAÇ FONKSİYONU
 Fonksiyon:  y = 5x₁ + 7x₂ - 0.1x₁² - 0.2x₂²
 
-- x₁: CPU Çekirdek Sayısı
-- x₂: RAM Miktarı (GB)
-- y: Performans Skoru
+- 'x₁': CPU Çekirdek Sayısı
+- 'x₂': RAM Miktarı (GB)
+- 'y': Performans Skoru
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -44,40 +44,40 @@ Ceza katsayısı yüksek seçilmiştir. Bunun nedeni, kısıtları ihlal eden ç
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## KULLANIM
-1. Tüm ".py" dosyaları aynı klasörde bulunmalıdır.
-2. "main.py" dosyasını "%run main.py" komutuyla çalıştırılır.
+1. Tüm '.py' dosyaları aynı klasörde bulunmalıdır.
+2. 'main.py' dosyasını '%run main.py' komutuyla çalıştırılır.
 3. Genetik algoritma çıktısı olarak:
    - Algoritmanın önerdiği en uygun CPU ve RAM değerleri
    - Bu değerlere karşılık gelen en iyi skor
    - Nesiller ilerledikçe skorun değişimini gösteren grafik
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Genetik Operatörler Açıklamaları (genetik_operators.py)
+## Genetik Operatörler Açıklamaları ('genetik_operators.py')
 Bu dosya, genetik algoritmanın temel mantığını oluşturan kısımları içerir.
 
-1. tahmin_y(birey)
+1. 'tahmin_y(birey)'
 Verilen bireyin CPU, RAM değerlerini kullanarak amaç fonksiyonuna göre performansını hesaplar.
 
-2. kisit_kontrol(birey)
+2. 'kisit_kontrol(birey)'
 Bireyin x₁ * x₂ ≤ 512 ve x₁ ≥ 4 kısıtlarına uyup uymadığını kontrol eder.
 Her ihlal için 1 ceza puanı olacak şekilde ihlal sayısını döndürür.
 
-3. uygunluk_hesapla(birey)
+3. 'uygunluk_hesapla(birey)'
 Performans skorundan, varsa ceza puanlarını düşerek bireyin Fitness değerini hesaplar.
 
-4. rank_temelli_secim(populasyon, uygunluklar, adet=2)
+4. 'rank_temelli_secim(populasyon, uygunluklar, adet=2)'
 Bireyleri uygunluk değerlerine göre rank ile sıralar.
 Daha iyi bireylerin seçilme olasılığını artırarak belirlenen sayıda ebeveyn seçer.
 
-5. tek_noktali_caprazlama(p1, p2)
+5. 'tek_noktali_caprazlama(p1, p2)'
 İki ebeveynin genlerini (CPU ve RAM) tek bir noktadan değiştirerek iki yeni birey üretir.
 
-6. mutasyon_uygula(birey, ihtimal, buyukluk)
+6. 'mutasyon_uygula(birey, ihtimal, buyukluk)'
 Gen çeşitliliğini sağlamak için belirli bir ihtimalle CPU veya RAM değerlerini değiştirir.
-"np.clip" kullanılarak gen değerlerinin sınırların dışına çıkması engellenir.
+'np.clip' kullanılarak gen değerlerinin sınırların dışına çıkması engellenir.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Evrimsel Algoritma Açıklamaları (evrim_motoru.py)
+## Evrimsel Algoritma Açıklamaları ('evrim_motoru.py')
 Bu dosya, genetik algoritmanın ana döngüsünü çalıştırır ve popülasyonun nesiller boyunca nasıl evrildiğini yönetir.
 
 Algoritma Adımları:
@@ -87,9 +87,9 @@ Algoritma Adımları:
 - Elde edilen en iyi skorlar kaydedilir ve grafik üzerinde gösterilir.
 
 ** Parametreler :
-pop_buyuklugu: Popülasyondaki birey sayısı (20)
-nesil_sayisi:toplam döngü sayısı (50)
-mutasyon_ihtimali: Her bir genin rastgele değişime uğrama olasılığı (0.05)
-mutasyon_buyuklugu: Mutasyon gerçekleştiğinde gen değerinin ne kadar değişeceği (1)
-secim_turu: 'Rank Temelli Seçim'
-caprazlama_turu: 'Tek Noktalı Çaprazlama'
+'pop_buyuklugu': Popülasyondaki birey sayısı (20)
+'nesil_sayisi':toplam döngü sayısı (50)
+'mutasyon_ihtimali': Her bir genin rastgele değişime uğrama olasılığı (0.05)
+'mutasyon_buyuklugu': Mutasyon gerçekleştiğinde gen değerinin ne kadar değişeceği (1)
+'secim_turu': 'Rank Temelli Seçim'
+'caprazlama_turu': 'Tek Noktalı Çaprazlama'
